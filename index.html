@@ -45,7 +45,35 @@
             <div class="backdrop is-hidden" data-modal>
                 <div class="modal">
                     <button class="button-close" type="button" data-modal-close></button>
+                    <form class="form js-speaker-form">
+                        <h2 class="form-tittle">Залишіть свої дані, ми вам передзвонимо</h2>
+                        <div class="form-field">
+                            <label for="name" class="form-label">Ім'я</label>
+                            <input class="form-input" type="text" name="name" id="name" autocomplete="name"/>
+                        </div>
+                       <div class="form-field">
+                            <label for="tel" class="form-label">Телефон</label>
+                            <input class="form-input" type="tel" name="tel" id="tel" autocomplete="tel"/>
+                       </div>
+                       <div class="form-field">
+                        <label for="email" class="form-label">Почта</label>
+                        <input class="form-input" type="email" name="email" id="email" autocomplete="email"/>
+                       </div>
+                       
+                       <div class="form-field form-comment">
+                        <label for="comment">Коментарій</label>
+                        <textarea name="comment" id="comment" rows="8" placeholder="Введіть текст"></textarea>
+                       </div> 
+                        
+                       <div class="form-field form-policy">
+                            <input type="checkbox" name="policy" id="policy">
+                            <label for="policy">Погоджуюся з розсилкою та приймаю <a href="">Умови договору</a></label>
+                       </div>
+
+                        <button class="hero-button" type="button">Відправить</button>
+                    </form>
                 </div>
+    
             </div>
         </section>
 

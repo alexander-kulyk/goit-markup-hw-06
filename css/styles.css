@@ -295,6 +295,70 @@ body{
     cursor: pointer ;
     box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.2)
 }
+.form-tittle{
+    margin-top: 0;
+    margin-bottom: 12px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+textarea{
+    resize: none;
+
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+}
+.form-field textarea::placeholder{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+
+    padding: 12px 16px;
+}
+form{
+    width: 528px;
+    padding: 40px;
+
+}
+.form-field {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em; 
+    
+    color: var(--second-text-color);
+}
+.form-field label{
+    margin-bottom: 4px;
+}
+.form-field .form-input{
+    height: 40px;
+    margin: 0;
+    padding: 0;
+
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+}
+.form-comment{
+    margin-bottom: 20px;
+}
+.form-policy{
+    margin-bottom: 30px;
+}
 
 /* Особливості */
 .specific-selection{
