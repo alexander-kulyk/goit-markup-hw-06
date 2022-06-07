@@ -718,6 +718,31 @@ color:var(--logo-footer-color);
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
 }
+
+.subscribe {
+    margin-left: 93px;
+}
+
+.form-subscribe {
+    display: flex;
+    padding: 0;
+}
+
+.form-subscribe input {
+    width: 358px;
+    height: 50px;
+    margin-right: 12px;
+
+    background-color: var(--footer-back-color);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+}
+.form-subscribe input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+    padding-left: 16px;
+}
+
+
 /* Портфоліо */
 .portfolio {
     display: none;
@@ -772,7 +797,6 @@ color:var(--logo-footer-color);
     width: calc((100% - 32px)/5);
     margin-right: 8px; */
 
-/* social icon */
 
 
 /* Проект */
