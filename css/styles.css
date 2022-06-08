@@ -732,14 +732,25 @@ color:var(--logo-footer-color);
     width: 358px;
     height: 50px;
     margin-right: 12px;
+    padding-left: 16px;
 
     background-color: var(--footer-back-color);
+    color: var(--body-background-color);
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 .form-subscribe input::placeholder {
     color: rgba(255, 255, 255, 0.6);
-    padding-left: 16px;
+}
+.icon-send{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding-left: 10px;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 
