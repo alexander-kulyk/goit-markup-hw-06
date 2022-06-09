@@ -812,6 +812,11 @@ color:var(--logo-footer-color);
     border-radius: 4px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
+.form-subscribe input:focus{
+    border: 1px solid var(--accent-color);
+    outline: none;
+    cursor: pointer;
+}
 .form-subscribe input::placeholder {
     color: rgba(255, 255, 255, 0.6);
 }
