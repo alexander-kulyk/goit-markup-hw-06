@@ -420,7 +420,7 @@ form{
     display: block;
     width: 16px;
     height: 15px;
-    /* background-image: url(./images/uncheck.svg); */
+    /* background-image: url(../images/uncheck.svg); */
     border: 2px solid  var(--primary-text-color);
     border-radius: 2px;
     margin-right: 8px;
@@ -432,7 +432,7 @@ form{
 .checkbox:checked + .checkbox-icon{
     background-color: var(--accent-color);
     border: var(--accent-color);
-    background-image: url(/images/icon\ check.svg);
+    background-image: url(./images/icon\ check.svg);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
