@@ -400,16 +400,7 @@ form{
     margin-bottom: 30px;
     margin-top: 20px;
 }
-.policy-link{
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    text-decoration-line: underline;
-    color: var(--accent-color);
-}
+
 .checkbox{
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -424,9 +415,6 @@ form{
     border-radius: 2px;
     margin-right: 8px;
 }
-.checkbox-icon:focus{
-    border: 2px solid var(--accent-color);
-}
 
 .checkbox:checked + .checkbox-icon{
     background-color: var(--accent-color);
@@ -437,6 +425,23 @@ form{
     background-position: center;
     background-origin: content-box ;
 }
+.checkbox:focus+.checkbox-icon {
+    border: 2px solid var(--accent-color);
+}
+.policy-link {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    text-decoration-line: underline;
+    color: var(--accent-color);
+}
+.policy-link:hover, .policy-link:focus{
+    text-decoration: none;
+}
+
 /* Особливості */
 .specific-selection{
     padding-top: 94px;
