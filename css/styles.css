@@ -420,7 +420,7 @@ form{
     display: block;
     width: 16px;
     height: 15px;
-    /* background-image: url(/images/uncheck.svg); */
+    /* background-image: url(./images/uncheck.svg); */
     border: 2px solid  var(--primary-text-color);
     border-radius: 2px;
     margin-right: 8px;
