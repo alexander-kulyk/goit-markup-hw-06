@@ -325,6 +325,8 @@ textarea{
     padding-left: 16px;
     padding-top: 12px;
     outline: none;
+
+    transition: border 250ms var(--cubic-beziez);
 }
 .form-comment textarea:focus {
     border: 1px solid var(--accent-color);
@@ -374,9 +376,11 @@ form{
     color: var(--accent-color)
 }
 .form-input:focus{
-    color: var(--accent-color);
     border: 1px solid var(--accent-color);
     cursor: pointer;
+}
+.form-input{
+    transition: border 250ms var(--cubic-beziez);
 }
 
 
@@ -811,6 +815,8 @@ color:var(--logo-footer-color);
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+
+    transition: border 250ms var(--cubic-beziez);
 }
 .form-subscribe input:focus{
     border: 1px solid var(--accent-color);
