@@ -328,6 +328,7 @@ textarea{
 }
 .form-comment textarea:focus {
     border: 1px solid var(--accent-color);
+    cursor: pointer;
 }
 form{
     width: 528px;
@@ -361,23 +362,39 @@ form{
 }
 .form-svg{
     fill: currentColor;
-    color: var(--primary-text-color);
 }
-.icon-field:focus-within > .form-svg{
+.icon-field {
+    color: var(--primary-text-color);
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transition: color 250ms var(--cubic-beziez);
+}
+.form-input:focus ~ .icon-field{
     color: var(--accent-color)
 }
 .form-input:focus{
     color: var(--accent-color);
     border: 1px solid var(--accent-color);
-}
-.icon-field{
-    position: absolute;
-    top: 50%;
-    left: 12px;
+    cursor: pointer;
 }
 
-.form-policy{
+
+
+.lable-policy{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--second-text-color);
+
     margin-bottom: 30px;
+    margin-top: 20px;
 }
 .policy-link{
     font-family: 'Roboto';
@@ -389,7 +406,34 @@ form{
     text-decoration-line: underline;
     color: var(--accent-color);
 }
+.checkbox{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    position: absolute;
+}
+.checkbox-icon{
+    display: block;
+    width: 16px;
+    height: 15px;
+    /* background-image: url(/images/uncheck.svg); */
+    border: 2px solid  var(--primary-text-color);
+    border-radius: 2px;
+    margin-right: 8px;
+}
+.checkbox-icon:focus{
+    border: 2px solid var(--accent-color);
+}
 
+.checkbox:checked + .checkbox-icon{
+    background-color: var(--accent-color);
+    border: var(--accent-color);
+    background-image: url(/images/icon\ check.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-origin: content-box ;
+}
 /* Особливості */
 .specific-selection{
     padding-top: 94px;
@@ -604,8 +648,6 @@ form{
     fill: currentColor;
 }
 
-/* .social-svg:hover{ fill: var(--body-background-color);
-} */
 
 .social-svg{
     fill: currentColor;

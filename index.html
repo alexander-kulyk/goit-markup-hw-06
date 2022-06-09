@@ -60,7 +60,7 @@
                             <label for="tel" class="form-label">Телефон</label>
                             <input class="form-input" type="tel" name="tel" id="tel">
                             <div class="icon-field">
-                                <svg width="18px" height="18px">
+                                <svg class="form-svg" width="18px" height="18px">
                                     <use href="./images/symbol-defs.svg#phone-black"></use>
                                 </svg>
                             </div>
@@ -69,7 +69,7 @@
                         <label for="email" class="form-label">Почта</label>
                         <input class="form-input" type="email" name="email" id="email">
                         <div class="icon-field">
-                            <svg width="18px" height="18px">
+                            <svg class="form-svg" width="18px" height="18px">
                                 <use href="./images/symbol-defs.svg#email-black"></use>
                             </svg>
                         </div>
@@ -80,10 +80,13 @@
                         <textarea name="comment" id="comment" rows="8" placeholder="Введіть текст"></textarea>
                        </div> 
                         
-                       <div class="form-field form-policy">
-                            <input type="checkbox" name="policy" id="policy">
-                            <label for="policy">Погоджуюся з розсилкою та приймаю <a class="policy-link" href="">Умови договору</a></label>
-                       </div>
+                      <label class="lable-policy">
+                        <input class="checkbox" type="checkbox" name="policy" id="policy">
+                        <span class="checkbox-icon"></span>
+                        <span>Погоджуюся з розсилкою та приймаю <a class="policy-link" href="">Умови
+                                договору</a>
+                        </span>
+                      </label>
 
                         <button class="hero-button" type="button">Відправить</button>
                     </form>
